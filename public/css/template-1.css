@@ -281,7 +281,7 @@ h1 {
   empty-cells: hide;
 }
 
-.nav_link::before,
+/* .nav_link::before,
 .nav_link::after {
   content: '';
   display: inline-block;
@@ -292,7 +292,7 @@ h1 {
 
 .nav_link::before {
   margin-right: 15px;
-}
+} */
 
 .nav_link::after {
   margin-left: 15px;
