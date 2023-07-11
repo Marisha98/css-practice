@@ -1,16 +1,17 @@
-<div>
-	<header class="header">
+<header class="header">
 
-		<div>
-			{{> logo}}
+	<a href="#test">
+		{{> logo}}
+	</a>
+	<nav class="header_nav">
+		<div class="header_nav_right">
+			{{> nav list=header}}
 		</div>
-		<nav class="header_nav">
-			<div class="header_nav_right">
-				{{> nav list=header}}
-			</div>
-		</nav>
-	</header>
-</div>
+	</nav>
+</header>
+
+
+
 
 {{#with hero}}
 <div class="hero">
@@ -18,9 +19,34 @@
 		<h1 class="hero_title">{{title}}</h1>
 		<p class="hero_text">{{text}}</p>
 	</div>
-	<img src="{{photo}}" alt="Hero image" class="hero_image">
+	<div class="hero_slider">
+		<div class="hero_slider_icon hero_slider_left">{{left}}</div>
+		<img src="{{photo}}" alt="Hero image" class="hero_image">
+		<div class="hero_slider_icon hero_slider_right">{{right}}</div>
+	</div>
 </div>
 {{/with}}
+
+<input type="text" class="input">
+
+<div class="modal">
+	{{hero.text}} {{hero.text}}
+	{{!-- <img src="{{hero.photo}}" alt="Hero image" class="modal_image"> --}}
+
+	<div class="modal_text">{{hero.text}} {{hero.text}}</div>
+</div>
+
+<main class="blog">
+	{{#each blog}}
+	{{> cardBlog data=this}}
+	{{/each}}
+</main>
+
+<main class="blog">
+	{{#each blog}}
+	{{> cardBlog data=this}}
+	{{/each}}
+</main>
 
 <main class="blog">
 	{{#each blog}}
@@ -40,19 +66,18 @@
 </div>
 {{/with}}
 
-<div>
-	<footer class="row g-0 footer">
-		<div class="col-3">
-			{{> logo}}
-			<span class="footer_copyright">Copyright 2023-2024</span>
-		</div>
+
+<footer class="footer" id="test">
+	<div class="col-3">
+		{{> logo}}
+		<span class="footer_copyright">Copyright 2023-2024</span>
+	</div>
 
 
-		{{#each footer}}
-		<div class="col-3">
-			<span class="footer_title">{{title}}</span>
-			{{> nav list=links isVertical=true}}
-		</div>
-		{{/each}}
-	</footer>
-</div>
+	{{#each footer}}
+	<div class="col-3">
+		<span class="footer_title">{{title}}</span>
+		{{> nav list=links isVertical=true}}
+	</div>
+	{{/each}}
+</footer>
