@@ -457,7 +457,7 @@ body {
     }
 
     .feat_card_with_descriprion {
-      max-height: 300px;
+      /* max-height: 300px; */
       width: 100%;
       justify-content: center;
       max-width: fit-content;
@@ -506,9 +506,9 @@ body {
       grid-template-columns: 1fr;
     }
 
-    /* .features_grid_3 {
+    .features_grid_3 {
       grid-template-columns: 1fr;
-    } */
+    }
 
     .hero_section {
       display: flex;
