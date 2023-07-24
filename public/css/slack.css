@@ -342,6 +342,11 @@ body {
     height: 420px;
   }
 
+  .explore_card:hover {
+    box-shadow: 10px 5px 25px 2px rgba(0, 0, 0, 0.41);
+    transition: 1s;
+  }
+
   .arrow_more {
     display: flex;
     flex-direction: row;
@@ -452,7 +457,7 @@ body {
     }
 
     .feat_card_with_descriprion {
-      max-height: 300px;
+      /* max-height: 300px; */
       width: 100%;
       justify-content: center;
       max-width: fit-content;
@@ -501,9 +506,10 @@ body {
       grid-template-columns: 1fr;
     }
 
-    /* .features_grid_3 {
-      grid-template-columns: 1fr;
-    } */
+    .features_grid_3 {
+      display: flex;
+      flex-direction: column;
+    }
 
     .hero_section {
       display: flex;
