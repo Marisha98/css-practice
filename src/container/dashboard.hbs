@@ -45,18 +45,7 @@
 					<span class="text text--light">Products</span>
 				</a>
 
-				<div class="relative click">
-					<div class="field field--select">
-						<span class="text text--light">Choose ...</span>
-					</div>
-					<select class="field__select">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-					</select>
-				</div>
+
 			</nav>
 		</aside>
 		<header class="header">
@@ -90,29 +79,201 @@
 
 						<div class="relative vertical vertical--small">
 							<div class="analytic__title text text--light">$961</div>
-							<div class="analytic__info text text--small text--lighter">$961</div>
+							<div class="analytic__info text text--small text--lighter">Total Order</div>
 
 							<span class="icon analytic_arrow"
 								style="background-image: url('/svg/analytic/blue_arrow_circle.svg')"></span>
 						</div>
 					</div>
 
-					<div class="analytic analytic--double">test</div>
-					<div class="analytic">
-						<div>test</div>
-						<div>test</div>
-						<div>test</div>
-					</div>
-					<div class="analytic">
-						<div>test</div>
-						<div>test</div>
-						<div>test</div>
-					</div>
-				</section>
+					<div class="analytic analytic--double analytic--purple">
+						<span class="icon analytic_button icon-button icon--color-purple click"
+							style="background-image: url('/svg/analytic/earning.svg')"></span>
 
+						<div class="relative vertical vertical--small">
+							<div class="analytic__title text text--light">$500.00</div>
+							<div class="analytic__info text text--small text--lighter">Total earning</div>
+
+							<span class="icon analytic_arrow"
+								style="background-image: url('/svg/analytic/purple_arrow_circle.svg')"></span>
+						</div>
+
+					</div>
+
+					<div class="analytic analytic--row analytic--blue">
+						<span class="icon analytic_button icon-button icon--color-blue click"
+							style="background-image: url('/svg/analytic/earning.svg')"></span>
+
+						<div class="relative vertical vertical--small">
+							<div class="analytic__title text text--light">$203k</div>
+							<div class="analytic__info text text--small text--lighter">Total Income</div>
+						</div>
+					</div>
+					<div class="analytic analytic--row analytic--transparent">
+						<span class="icon analytic_button icon-button icon--color-yellow-light click"
+							style="background-image: url('/svg/analytic/income.svg')"></span>
+
+						<div class="relative vertical vertical--small">
+							<div class="analytic__title text">$203k</div>
+							<div class="analytic__info text text--small text--gray">Total Income</div>
+						</div>
+					</div>
+
+				</section>
 			</div>
 
+			<div class="layout">
+				<div class="main__double">
+					<div class="box purchase__list">
+						<div class="puschase_title text text--heading text--bold">Purchase list</div>
+
+						<div class="divier--margine-block">
+							{{> divider}}
+						</div>
+
+						<div class="purchase__content text">
+							<div class="id_data vertical vertical--small">
+								<div class="id">ID437661</div>
+								<div class="id_time">May 11, 2023, 14:21</div>
+							</div>
+
+							<div class="item_data vertical vertical--small">
+								<div class="item">AirOn ProCam</div>
+								<div class="item_info">7/8 USB Type-C</div>
+							</div>
+
+							<div class="payment_data vertical vertical--small">
+								<div class="price">132.32 EUR</div>
+								<div class="payment payment_not_paid">Not paid</div>
+							</div>
+
+							<div class="customer_data vertical vertical--small">
+								<div class="customer_title">Customer</div>
+								<div class="customer_email">robin@com.de</div>
+							</div>
+						</div>
+
+						<div class="divier--margine-block">
+							{{> divider}}
+						</div>
+						<div class="purchase__content text">
+							<div class="id_data vertical vertical--small">
+								<div class="id">ID437661</div>
+								<div class="id_time">May 11, 2023, 14:21</div>
+							</div>
+
+							<div class="item_data vertical vertical--small">
+								<div class="item">PHILIPS Essential</div>
+								<div class="item_info">HD9200/90</div>
+							</div>
+
+							<div class="payment_data vertical vertical--small">
+								<div class="price">543 USD</div>
+								<div class="payment payment_pay_stripe">Pay by Stripe</div>
+							</div>
+
+							<div class="customer_data vertical vertical--small">
+								<div class="customer_title">Customer</div>
+								<div class="customer_email">dima@com.ua</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="box payment__form vertical">
+						<div class="puschase_title text text--heading text--bold">Payment</div>
+
+						<div>
+							{{> divider}}
+						</div>
+
+						<div class="payment_type">
+							<div class="card_type">
+								<input type="radio" name="credit" id="credit" />
+								<label for="payment" class="text">Credit card</label>
+							</div>
+
+							<div class="card_type">
+								<input type="radio" name="credit" id="credit" />
+								<label for="payment" class="text">Debit card</label>
+							</div>
+
+							<div class="card_type">
+								<input type="radio" name="credit" id="credit" />
+								<label for="payment" class="text">PayPal</label>
+							</div>
+						</div>
+
+						<div class="card_form vertical">
+
+							<div class="vertical vertical--small">
+								<label for="card_name" class="text field_lable">Name on card</label>
+								<input type="text" class="field card_data">
+							</div>
+
+							<div class="vertical vertical--small">
+								<label for="card_name" class="text field_lable">Name on card</label>
+								<input type="text" class="field card_data">
+							</div>
+
+							<div class="vertical vertical--small">
+								<label for="card_name" class="text field_lable">Name on card</label>
+								<input type="text" class="field card_data">
+							</div>
+
+							<div class="vertical vertical--small">
+								<label for="card_name" class="text field_lable">Name on card</label>
+								<input type="text" class="field card_data">
+							</div>
+
+
+						</div>
+
+						<div>
+							{{> divider}}
+						</div>
+
+						<div class="location__form">
+							<div class="vertical vertical--small relative click">
+								<label class="field_lable">State</label>
+								<div class="field field--select">
+									<span class="text">Choose ...</span>
+								</div>
+
+								<span class="icon select_sign" style="background-image: url('/svg/select.svg')"></span>
+
+								<select class="field__select">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+
+							</div>
+
+							<div class="vertical vertical--small relative click">
+								<label class="field_lable">Country</label>
+								<div class="field field--select">
+									<span class="text">Choose ...</span>
+								</div>
+
+								<span class="icon select_sign" style="background-image: url('/svg/select.svg')"></span>
+
+								<select class="field__select">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
+
 	</div>
 
 
